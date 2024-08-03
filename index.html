@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #e74c3c; /* Rouge communiste */
+            background-color: #e74c3c;
             color: #fff;
             margin: 0;
             padding: 0;
@@ -20,12 +20,15 @@
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
             position: relative;
             margin-bottom: 30px;
-            border-bottom: 5px solid #ffc500; /* Bordure dorée pour accent */
+            border-bottom: 5px solid #ffc500;
         }
 
         h1, h2 {
             margin: 0;
             padding: 0;
+        }
+        h2col {
+            color: #fff;
         }
 
         h1 {
@@ -35,7 +38,7 @@
         }
 
         h1 span {
-            color: #ffc500; /* Jaune pour accent */
+            color: #ffc500;
         }
 
         h2 {
@@ -45,17 +48,14 @@
             margin-top: 10px;
             text-transform: uppercase;
         }
-        h2col {
-            color: #fff;
-        }
 
         .content {
             padding: 20px;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             text-align: left;
-            border: 2px solid #ffc500; /* Bordure dorée pour le bloc de contenu */
-            background-color: #333; /* Fond sombre pour contraste */
+            border: 2px solid #ffc500;
+            background-color: #333;
             border-radius: 10px;
         }
 
@@ -74,7 +74,7 @@
             line-height: 1.6;
             margin: 20px 0;
             color: #fff;
-            text-align: justify; /* Alignement justifié pour un aspect plus formel */
+            text-align: justify;
         }
 
         .highlight {
@@ -90,7 +90,7 @@
             bottom: 0;
             left: 0;
             box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
-            border-top: 5px solid #ffc500; /* Bordure dorée en haut du footer */
+            border-top: 5px solid #ffc500;
         }
 
         footer p {
@@ -98,13 +98,64 @@
             font-size: 0.9em;
             color: #fff;
         }
+
+        .sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .section {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .section h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+
+        .section p {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #ffc500;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #e67e22;
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Bienvenue au <br><span>Communistland</span></h1>
-        <h2><h2col>À la gloire Nationale du </h2col><br><span>☭ Grand Camarade Oulianov ☭</span></h2>
+        <h2><h2col>À la gloire Nationale du</h2col> <br><span>☭ Grand Camarade Oulianov ☭</span></h2>
     </header>
 
     <div class="content">
@@ -113,11 +164,41 @@
             Sous la supervision de <span class="highlight">Notre Grand et Vaillant Camarade Oulianov</span>, le <span class="highlight">Communistland</span> prospère et atteint de nouveaux sommets de grandeur.
         </p>
         <p>
-            Rejoignez notre <span class="highlight">Glorieuse et Éternelle Nation</span> où l'égalité, la justice, et l'adoration du <span class="highlight">Grand Camarade Oulianov</span> sont les principes fondamentaux de notre dévouement.
+            Rejoignez notre <span class="highlight">Glorieuse et Éternelle Nation</span> où l'égalité de nos hommes, la justice, et l'adoration du <span class="highlight">Grand Camarade Oulianov</span> sont les principes fondamentaux de notre dévouement.
         </p>
         <p>
             „<span class="highlight">Unis derrière un même drapeau, marchons ensemble vers un avenir radieux, Camarades !</span>”
         </p>
+    </div>
+
+    <div class="sections">
+        <div class="section">
+            <img src="constitution.jpg" alt="Icône Constitution">
+            <h3>Constitution</h3>
+            <p>Découvrez notre constitution et les lois qui régissent le <span class="highlight">Communistland</span>.</p>
+            <a href="constitution.html" class="button">En savoir plus</a>
+        </div>
+
+        <div class="section">
+            <img src="culture.jpg" alt="Icône Culture">
+            <h3>Culture</h3>
+            <p>Explorez la richesse culturelle et les traditions uniques de notre grande nation.</p>
+            <a href="culture.html" class="button">En savoir plus</a>
+        </div>
+
+        <div class="section">
+            <img src="monnaie.jpg" alt="Icône Économie">
+            <h3>Économie</h3>
+            <p>Informez-vous sur notre système économique et nos principales réalisations.</p>
+            <a href="economy.html" class="button">En savoir plus</a>
+        </div>
+        
+        <div class="section">
+            <img src="histoire.jpg" alt="Icône Histoire">
+            <h3>Histoire</h3>
+            <p>Plongez dans l'histoire fascinante et les moments marquants de <span class="highlight">Communistland</span>.</p>
+            <a href="history.html" class="button">En savoir plus</a>
+        </div>
     </div>
 
     <footer>
