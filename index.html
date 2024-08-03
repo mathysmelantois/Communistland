@@ -18,49 +18,58 @@
             background-color: #c0392b;
             padding: 20px;
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            margin-bottom: 20px;
         }
 
         h1 {
             font-size: 3em;
             margin: 0;
             text-transform: uppercase;
+            color: #fff;
         }
-        hCOM{
-            color:#ffc500;
-        }
-        h34 {
-            font-family: Verdana;
+
+        h1 span {
             color: #ffc500;
-            margin: 0;
-            text-transform: uppercase;
         }
 
         h2 {
             font-size: 1.5em;
+            color: #ffc500;
             margin-top: 10px;
+            font-family: Verdana, sans-serif;
+            text-transform: uppercase;
         }
 
         .content {
-            padding: 50px 20px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
         }
 
         .leader-image {
             width: 300px;
             height: auto;
             border: 15px solid transparent;
-            border-image: url('combor.jpeg') 30 round;  bordure */
+            border-image: url('combor.jpeg') 30 round;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
-            margin-top: 30px;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         p {
             font-size: 1.2em;
             line-height: 1.6;
             margin: 20px 0;
-            text-align: left;
+            color: #fff;
         }
-        pcolor {
+
+        .highlight {
             color: #ffc500;
+            font-weight: bold;
         }
 
         footer {
@@ -82,25 +91,25 @@
 <body>
 
     <header>
-        <h1>Bienvenue au <br><hCOM>Communistland</hCOM></h1>
-        <h2>À la gloire Nationale du <br><h34>☭ Grand Camarade Oulianov ☭</h34></h2>
+        <h1>Bienvenue au <br><span>Communistland</span></h1>
+        <h2>À la gloire Nationale du <br><span>☭ Grand Camarade Oulianov ☭</span></h2>
     </header>
 
     <div class="content">
-        <img src="oulianov.jpg" alt="Portrait du Nôtre Le Grand Camarade Oulianov" class="leader-image">
-        <b><p>
-            Sous la supervision de <pcolor>Notre Grand et Vaillant Camarade Oulianov</pcolor>, le <pcolor>Communistland</pcolor> prospère et atteint de nouveaux l'effigie de notre Grandeur.
+        <img src="oulianov1.jpg" alt="Portrait du Grand Camarade Oulianov" class="leader-image">
+        <p>
+            Sous la supervision de <span class="highlight">Notre Grand et Vaillant Camarade Oulianov</span>, le <span class="highlight">Communistland</span> prospère et atteint de nouveaux sommets de grandeur.
         </p>
         <p>
-            Rejoignez notre <pcolor>Glorieuse et Éternelle Nation</pcolor> où l'égalité de nos hommes, la justice, et l'adoration du <pcolor>Grand Camarade Oulianov</pcolor> sont les principes fondamentaux de notre dévouement.
+            Rejoignez notre <span class="highlight">Glorieuse et Éternelle Nation</span> où l'égalité, la justice, et l'adoration du <span class="highlight">Grand Camarade Oulianov</span> sont les principes fondamentaux de notre dévouement.
         </p>
         <p>
-            „<pcolor>Unis derrière un même drapeau, marchons ensemble vers un avenir radieux, Camarades !</pcolor>”
-        </p></b>
+            „<span class="highlight">Unis derrière un même drapeau, marchons ensemble vers un avenir radieux, Camarades !</span>”
+        </p>
     </div>
 
     <footer>
-        <p>☭&copy☭; <i>2024 Communistland - Tout pouvoir à notre grand peuple... <b><pcolor>ou presque !</pcolor></b></i></p>
+        <p>☭&copy; 2024 Communistland - Tout pouvoir à notre grand peuple... <span class="highlight">ou presque !</span></p>
     </footer>
 
 </body>
