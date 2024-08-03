@@ -117,38 +117,44 @@
             text-align: center;
             position: relative;
             overflow: hidden;
+            margin-bottom: 20px;
         }
-
+        
         .section img {
             width: 100px;
-            height: auto;
+            height: 100px;
+            border-radius: 50%; 
             margin-bottom: 10px;
         }
-
+        
         .section h3 {
             margin: 10px 0;
             font-size: 1.5em;
         }
-
+        
         .section p {
             font-size: 1em;
             margin: 10px 0;
+            line-height: 1.4;
+            color: #333; 
         }
-
+        
         .button {
             display: inline-block;
-            background-color: #ffc500;
+            background-color: #ffc500; 
             color: #333;
-            padding: 10px 20px;
+            padding: 10px 20px; 
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 5px; 
             font-weight: bold;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease; 
+            cursor: pointer; 
+        }
+        
+        .button:hover {
+            background-color: #e67e22; 
         }
 
-        .button:hover {
-            background-color: #e67e22;
-        }
     </style>
 </head>
 <body>
@@ -175,29 +181,29 @@
         <div class="section">
             <img src="constitution.jpg" alt="Icône Constitution">
             <h3>Constitution</h3>
-            <p>Découvrez notre constitution et les lois qui régissent le <span class="highlight">Communistland</span>.</p>
-            <a href="constitution.html" class="button">En savoir plus</a>
+            <i><p>Découvrez notre constitution et les lois qui régissent le <span class="highlight">Communistland</span>.</p></i>
+            <a href="constitution.html" class="button">Accéder à la Constitution</a>
         </div>
 
         <div class="section">
             <img src="culture.jpg" alt="Icône Culture">
             <h3>Culture</h3>
-            <p>Explorez la richesse culturelle et les traditions uniques de notre grande nation.</p>
-            <a href="culture.html" class="button">En savoir plus</a>
+            <i><p>Explorez la richesse culturelle et les traditions uniques de notre grande nation.</p></i>
+            <a href="culture.html" class="button">Accéder à la Culture</a>
         </div>
 
         <div class="section">
             <img src="monnaie.jpg" alt="Icône Économie">
             <h3>Économie</h3>
-            <p>Informez-vous sur notre système économique et nos principales réalisations.</p>
-            <a href="economy.html" class="button">En savoir plus</a>
+            <i><p>Informez-vous sur notre système économique et nos principales réalisations, ainsi que notre monaie de la Patate.</p></i>
+            <a href="economy.html" class="button">S'informer de l'Economie</a>
         </div>
-        
+
         <div class="section">
             <img src="histoire.jpg" alt="Icône Histoire">
             <h3>Histoire</h3>
-            <p>Plongez dans l'histoire fascinante et les moments marquants de <span class="highlight">Communistland</span>.</p>
-            <a href="history.html" class="button">En savoir plus</a>
+            <i><p>Plongez dans l'histoire fascinante et les moments marquants de <span class="highlight">Communistland</span>.</p></i>
+            <a href="history.html" class="button">S'informer de l'Histoire</a>
         </div>
     </div>
 
